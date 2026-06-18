@@ -6,7 +6,7 @@ Trabalho individual da disciplina de **Microprocessadores**. O firmware roda em 
 
 O sistema tem duas funções, ambas tratadas por interrupção (o laço principal fica vazio):
 
-- **Recepção via USART → display de 7 segmentos.** Cada byte recebido é interpretado como um caractere ASCII. Se for um dígito hexadecimal válido (`0`–`9`, `A`–`F`, maiúsculo ou minúsculo), o padrão correspondente é exibido no display. Qualquer outro caractere mostra um traço (`-`).
+- **Recepção via USART → display de 7 segmentos.** Cada byte recebido é interpretado como um caractere ASCII. Se for um dígito hexadecimal válido (`0`–`9`, `A`–`F`, maiúsculo ou minúsculo), o padrão correspondente é exibido no display. Qualquer outro caractere é exibido como um traço (`-`).
 - **Botão (INT0) → transmissão do nome via UART.** Ao pressionar o botão, o programa  envia uma string de identificação pela UART, terminada por `CR LF`.
 
 ## Hardware
@@ -66,9 +66,6 @@ Projeto feito no **Atmel Studio 7 / Microchip Studio**:
         ├── projeto01.asmproj
         └── projeto01.componentinfo.xml
 ```
-
-As saídas de compilação (`Debug/`) e os arquivos de cache da IDE (`.vs/`, `.atsuo`)
-não são versionados — veja o `.gitignore`.
 
 ## Autor
 
