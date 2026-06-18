@@ -1,0 +1,20 @@
+# Saídas de compilação Microchip Studio
+[Dd]ebug/
+[Rr]elease/
+*.obj
+*.o
+*.elf
+*.eep
+*.lss
+*.map
+*.srec
+*.tmp
+
+# Cache e preferências da IDE
+.vs/
+*.atsuo
+*.user
+
+# Sistema operacional
+Thumbs.db
+.DS_Store
